@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <vector>
 #include <fstream>
@@ -99,7 +99,7 @@ int main()
     vector<vector<string>> lines; //Сюда будем записывать строки входного файла
     string line;
 
-    ifstream in("hellonew.asm");
+    ifstream in("hello.asm");
     if (in.is_open())
     {
         while (getline(in, line))
@@ -175,7 +175,7 @@ int main()
         }
     }
 
-    ofstream fs("output1.bin", ios::out | ios::binary);
+    ofstream fs("output.bin", ios::out | ios::binary);
     if (!fs)
     {
         cout << "Cannot open file!" << endl;
